@@ -21,7 +21,7 @@ export function timeWords(num: number): string {
   if(num == 0) {
     return str.substring(0, str.length - 2); // remove the trailing space
   }
-  return str + `${num} second${ num > 0 ?  's' : ''}`;
+  return str + `and ${num} second${ num > 0 ?  's' : ''}`;
 }
 
 const seconds = {
